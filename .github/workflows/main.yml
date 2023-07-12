@@ -25,4 +25,4 @@ jobs:
           cx_tenant: beta_nova8
           cx_client_id: ${{ secrets.CX_CLIENT_ID }}
           cx_client_secret: ${{ secrets.CX_CLIENT_SECRET }}
-          additional_params: additional_params: --sast-incremental --scan-types sast,iac-security,sca --threshold sast-high=1; kics-high=1; sca-high=1 --file-filter !test,!swagger,!docs,!*test.go --sca-filter !*Dockerfile --sast-filter !**\src,!**\root,!**\test
+          additional_params: --sast-incremental --scan-types sast,iac-security,sca --threshold sast-high=1; kics-high=1; sca-high=1 --file-filter !test,!swagger,!docs,!*test.go --sca-filter !*Dockerfile --sast-filter !**\src,!**\root,!**\test
