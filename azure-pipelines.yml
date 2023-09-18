@@ -9,6 +9,13 @@ trigger:
 pool:
   vmImage: ubuntu-latest
   
+resources:
+  repositories:
+    - repository: CheckmarxYamlTemplates
+      type: git
+      name: DevSecOps/CheckmarxYamlTemplates
+      ref: master
+  
 variables:
   cxTeam: 'CxServer\JornadaIngresso\JIFU'
   cxProjectName: '$(Build.DefinitionName)'
